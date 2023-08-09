@@ -1,0 +1,136 @@
+.menu {
+  background-image: url(../img/d558ac99a0.png);
+  height: 50vh;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.bg {
+  background-image: url(../img/bk.png);
+  background-size: 100% 100%;
+  background-position: cover;
+  z-index: 10;
+}
+
+.segment {
+  text-align: center;
+}
+
+button {
+  border-radius: 30px;
+  font-size: 35px;
+  padding: 20px 35px;
+  border: none;
+  z-index: 500;
+}
+
+.jjj .test .imgAfter {
+  position: relative;
+  width: 10%;
+}
+
+.test {
+  position: relative;
+}
+
+.test::after {
+  content: " ";
+  width: 45%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+
+.test::before {
+  content: " ";
+  width: 45%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.jjj .relati{
+  position: relative;
+}
+
+.jjj .khetm{
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  z-index: 200;
+}
+
+.jjj{
+  position: relative;
+  overflow: hidden;
+}
+
+.jjj .khetm2{
+  position: absolute;
+  top: 60px;
+  left: 93.5%;
+  z-index: 200;
+}
+
+
+
+.jjj .khetm3{
+  position: absolute;
+  bottom: 800px;
+  left: -1%;
+  z-index: 150;
+}
+
+.width img {
+  width: 100%;
+}
+
+footer{
+  background-image: linear-gradient(rgba(50, 2, 2, 0.819),rgba(128, 128, 128, 0.534)),
+  url(../img/bk.png);
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  z-index: 300;
+  overflow: hidden;
+}
+
+footer img{
+  width: 3%;
+  padding: 10px 5px;
+}
+
+footer p{
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+footer h2{
+  font-size: 80px;
+}
+
+footer .khetm4{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  z-index: 200;
+}
+
+footer .cow{
+  position: absolute;
+  top: 50px;
+  left: 85%;
+  width: 300px;
+}
+
