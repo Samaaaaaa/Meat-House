@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Meat House</title>
+    <link rel="shortcut icon" href="./img/Untitled-1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
+    <!-- ================================= navbar =============================== -->
+
     <section>
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container">
@@ -27,44 +30,59 @@
 
     <section class="bg jjj">
       <div class="container relati">
-        <div class="row">
-          <div class="col-sm-6 col-lg-3 g-4">
-            <div class="segment mb-4">
-              <button onclick="show1()">الكندوز</button>
+        <!-- ================================= buttons =============================== -->
+        <div class="">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
+              <div class="segment gfr ddd">
+                <button class="btn btn-light text-center" onclick="show1()">
+                  الكندوز
+                </button>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
+              <div class="segment gfr">
+                <button class="btn btn-light text-center" onclick="show2()">
+                  جاهز للتسوية
+                </button>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
+              <div class="segment gfr ddd">
+                <button class="btn btn-light text-center" onclick="show3()">
+                  حجز مسبق
+                </button>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
+              <div class="segment gfr">
+                <button class="btn btn-light text-center" onclick="show4()">
+                  الضاني
+                </button>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 g-4">
-            <div class="segment mb-4">
-              <button onclick="show2()">جاهز للتسوية</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 g-4">
-            <div class="segment mb-4">
-              <button onclick="show3()">حجز مسبق</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 g-4">
-            <div class="segment mb-4">
-              <button onclick="show4()">الضاني</button>
-            </div>
-          </div>
-          
-        </div>
-        <div class="khetm">
-          <img src="./img/100.png" alt="5etm" />
         </div>
 
-        <div class="test text-center p-4">
-          <img src="./img/Untitled-1.png" class="imgAfter" alt="logo" />
+        <!-- <div class="khetm">
+          <img src="./img/100.png" alt="5etm" />
+        </div> -->
+
+        <!-- ================================= cow logo =============================== -->
+        <div class="p-4">
+          <div class="test text-center">
+            <img src="./img/Untitled-1.png" class="imgAfter" alt="logo" />
+          </div>
         </div>
-        <!-- content of the button -->
+
+        <!-- ================================= content of the button =============================== -->
         <div class="content1" id="page1">
-          
-        </div>
+        
       </div>
-      <div class="khetm3">
+      
+      <!-- <div class="khetm3">
         <img src="./img/100.png" alt="5etm">
-      </div>
+      </div> -->
       <div class="khetm2">
         <img src="./img/100.png" alt="5etm" />
       </div>
@@ -73,42 +91,50 @@
     <footer>
       <div class="container py-5">
         <div class="d-flex">
-          <img src="./img/facebook.svg" class="m-1" alt="facebook icon" />
-          <img src="./img/instagram.svg" class="m-1" alt="instagram icon" />
-          <p class="text-white fw-bold">@MEATHOUSE.EG</p>
+          <a href="https://www.facebook.com/search/top/?q=trefle%20marketing%20agency" target="_blank">
+            <img src="./img/facebook.svg" class="m-2 px-2 w-100" alt="facebook icon"/>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">         
+             <img src="./img/instagram.svg" class="m-2 px-1 w-100" alt="instagram icon" />
+          </a>
+          <p class="text-white fw-bold px-3">@MEATHOUSE.EG</p>
         </div>
         <div class="d-flex">
-          <img src="./img/whatsapp.svg" class="m-1" alt="whatsapp icon" />
-          <img src="./img/phone-call (1).svg" class="m-1" alt="phone-call" />
-          <p class="text-white fw-bold">0155660003</p>
+          <a href="https://wa.me/01002633531?text=Hello%20there!" target="_blank">
+            <img src="./img/whatsapp.svg" class="m-2 px-2 w-100" alt="whatsapp icon"/>
+          </a>
+          <a href="tel:+01002633531" target="_blank">
+            <img src="./img/phone-call (1).svg" class="m-2 px-2 w-100" alt="phone-call"/>
+          </a>
+          <p class="text-white fw-bold px-3">0155660003</p>
         </div>
         <div class="d-flex">
-          <img src="./img/phone-call (1).svg" class="m-1" alt="phone-call" />
-          <p class="text-white fw-bold">0842031515</p>
+          <a href="tel:+01002633531" target="_blank">
+            <img src="./img/phone-call (1).svg" class="m-2 px-2 w-100" alt="phone-call"/>
+          </a>
+          <p class="text-white fw-bold px-3">0842031515</p>
         </div>
         <div class="d-flex">
-          <img src="./img/your-location.svg" class="m-1" alt="location icon" />
-          <p class="text-white fw-bold">
+          <a href="https://www.google.com/maps/place/Dallas,+TX,+USA/@32.8206645,-96.7315525,11z/data=!3m1!4b1!4m6!3m5!1s0x864c19f77b45974b:0xb9ec9ba4f647678f!8m2!3d32.7766642!4d-96.7969879!16zL20vMGYycnE?entry=ttu" target="_blank">
+            <img src="./img/your-location.svg" class="m-2 px-2 w-100" alt="phone-call"/>
+          </a>
+          <p class="text-white fw-bold px-3">
             دلــــة – شارع مدرسة الزراعة – أمام أبراج القضاة – بجوار هايبر
             الأبرار
           </p>
         </div>
         <h2 class="text-center text-white">MEAT HOUSE</h2>
       </div>
-      <div class="khetm4 p-2 ">
-        <img src="./img/100.png" class="w-100" alt="5etm">
+      <div class="khetm4 p-2">
+        <img src="./img/100.png" class="w-100" alt="5etm" />
       </div>
-=      <div class="cow p-2 ">
-        
-        <img src="./img/Untitled-1.png" class="w-100" alt="">
-      
+      =
+      <div class="cow p-2">
+        <img src="./img/Untitled-1.png" class="w-100" alt="" />
       </div>
-      
     </footer>
 
-          
-          
-
+    <!-- links of js -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

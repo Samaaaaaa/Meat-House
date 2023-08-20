@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ============================ navbar ============================ */
 .menu {
   background-image: url(../img/d558ac99a0.png);
   height: 50vh;
@@ -12,6 +21,7 @@ h3 {
   color: white;
 }
 
+/* ============================ bg of buttons ============================ */
 .bg {
   background-image: url(../img/bk.png);
   background-size: 100% 100%;
@@ -19,21 +29,55 @@ h3 {
   z-index: 10;
 }
 
-.segment {
-  text-align: center;
+
+  /* ============================ buttons in mediam screens ============================ */
+@media screen and (min-width: 768px) {
+  .gfr .btn{
+    font-size: 1.3rem;
+    margin: 30px 0px 0px;
+    border-radius: 30px;
+  
+  }
 }
 
-button {
+  /* ============================ media query of small devices and up ============================ */
+@media screen and (min-width: 576px) {
+
+      /* ============================ buttons ============================ */
+  .gfr .btn{
+    font-size: 1rem;
+    padding: 0.9rem !important;
+    width: 50%;
+  }
+
+  .gfr .btn:hover{
+    background-color: #2C1B1B;
+  color: white;
+  border: none;
+  }
+
+/* button {
   border-radius: 30px;
   font-size: 35px;
   padding: 20px 35px;
   border: none;
   z-index: 500;
+} */
+
+/* button:hover{
+  background-color: #2C1B1B;
+  color: white;
+} */
+.ddd{
+  display: flex;
+  justify-content: end;
 }
 
+
+/* ============================ cow logo ============================ */
 .jjj .test .imgAfter {
   position: relative;
-  width: 10%;
+  width: 20%;
 }
 
 .test {
@@ -42,8 +86,8 @@ button {
 
 .test::after {
   content: " ";
-  width: 45%;
-  height: 5px;
+  width: 43%;
+  height: 2px;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -52,22 +96,24 @@ button {
 
 .test::before {
   content: " ";
-  width: 45%;
-  height: 5px;
+  width: 44%;
+  height: 2px;
   background-color: white;
   position: absolute;
   top: 50%;
   left: 0px;
 }
 
+
+  /* ============================ a5tam ============================ */
 .jjj .relati{
   position: relative;
 }
 
 .jjj .khetm{
   position: absolute;
-  top: 20px;
-  left: 45%;
+  top: 70px;
+  left: 30%;
   z-index: 200;
 }
 
@@ -78,8 +124,8 @@ button {
 
 .jjj .khetm2{
   position: absolute;
-  top: 60px;
-  left: 93.5%;
+  bottom: 70px;
+  right: -7%;
   z-index: 200;
 }
 
@@ -92,9 +138,103 @@ button {
   z-index: 150;
 }
 
+  /* ============================ content of the button ============================ */
 .width img {
   width: 100%;
 }
+
+.inner{
+ /* padding: 0.5em; */
+ /* background-color: rgba(0, 0, 0, 0.749); */
+ border-radius: 20%;
+ -webkit-border-radius: 20%;
+ -moz-border-radius: 20%;
+ -ms-border-radius: 20%;
+ -o-border-radius: 20%;
+ position: relative;
+ overflow: hidden;
+ margin-bottom: 20px;
+}
+
+.blur{
+  padding: 3em 1.5em;
+  /*margin-top: 1rem;
+  */position: absolute;
+  width: 100%;
+  height: 7em;
+  background-color:rgba(0, 0, 0,0.8);
+  filter: blur(1rem);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-filter: blur(1rem);
+}
+
+.content1 .details{
+  padding: 2em 1.5em;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;
+  *//*padding: 10px 30px;
+  */
+  font-size: 1em;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  right: 0;
+  background-color:rgba(0, 0, 0,0.8);
+  z-index: 2;
+  
+}
+
+.conat{
+  border-right: solid white 2px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  
+  
+
+}
+.conat p{
+  padding-top: 0.4em;
+  width: 80%;
+  color: aliceblue;
+}
+.iconSvg{
+  width: 20%;
+}
+.type{
+  color: aliceblue;
+  padding-top: 0.08em;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+/* .price{
+  position: relative;
+}
+
+.price::after{
+  content: " ";
+  height: 80px;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 130%;
+} */
+
+/* .price{
+  font-size: 30px;
+} */
+
+
+
+
 
 footer{
   background-image: linear-gradient(rgba(50, 2, 2, 0.819),rgba(128, 128, 128, 0.534)),
@@ -133,3 +273,264 @@ footer .cow{
   width: 300px;
 }
 
+}
+
+
+  /* ============================ media query of extra small devices to small devices ============================ */
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    /* ============================ buttons ============================ */
+  /* .gfr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+  .gfr .btn{
+    font-size: 1rem;
+    padding: 15px 10px 15px !important;
+    width: 70% !important; 
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gfr .btn:hover{
+    background-color: #2C1B1B;
+  color: white;
+  border: none;
+  }
+
+/* button {
+  border-radius: 30px;
+  font-size: 35px;
+  padding: 20px 35px;
+  border: none;
+  z-index: 500;
+}
+
+button:hover{
+  background-color: #2C1B1B;
+  color: white;
+} */
+
+.ddd{
+  display: flex;
+  justify-content: end;
+}
+
+
+/* ============================ cow logo ============================ */
+.jjj .test .imgAfter {
+  position: relative;
+  width: 20%;
+}
+
+.test {
+  position: relative;
+}
+
+.test::after {
+  content: " ";
+  width: 43%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+}
+
+.test::before {
+  content: " ";
+  width: 44%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+
+  /* ============================ a5tam ============================ */
+.jjj .relati{
+  position: relative;
+}
+
+.jjj .khetm{
+  position: absolute;
+  top: 70px;
+  left: 30%;
+  z-index: 200;
+}
+
+.jjj{
+  position: relative;
+  overflow: hidden;
+}
+
+.jjj .khetm2{
+  position: absolute;
+  bottom: 70px;
+  right: -7%;
+  z-index: 200;
+}
+
+
+
+.jjj .khetm3{
+  position: absolute;
+  bottom: 800px;
+  left: -1%;
+  z-index: 150;
+}
+
+
+  /* ============================ content of the button ============================ */
+  .width img {
+    width: 100%;
+  }
+  
+
+  .inner{
+ /* padding: 0.5em; */
+ /* background-color: rgba(0, 0, 0, 0.749); */
+ border-radius: 20%;
+ -webkit-border-radius: 20%;
+ -moz-border-radius: 20%;
+ -ms-border-radius: 20%;
+ -o-border-radius: 20%;
+ position: relative;
+ overflow: hidden;
+ margin-bottom: 20px;
+}
+
+.blur{
+  padding: 3em 1.5em;
+  /*margin-top: 1rem;
+  */
+  position: absolute;
+  width: 100%;
+  height: 7em;
+  background-color:rgba(0, 0, 0, 0.296);
+  filter: blur(1rem);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-filter: blur(1rem);
+}
+
+.content1 .details{
+  /* padding: 2em 1.5em; */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;
+  *//*padding: 10px 30px;
+  */
+  font-size: 0.8em;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  right: 0;
+  background-color:rgba(0, 0, 0,0.8);
+  z-index: 2;
+  
+}
+.conat{
+  border-right: solid white 2px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  
+  
+
+}
+.conat p{
+  padding-top: 0.4em;
+  width: 80%;
+  color: aliceblue;
+}
+.iconSvg{
+  padding-left: 5px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.type{
+  color: aliceblue;
+  padding-top: 0.08em;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+
+.fle{
+  display: flex;
+  align-items: center;
+}
+/* .price{
+  position: relative;
+}
+
+.price::after{
+  content: " ";
+  height: 80px;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 130%;
+} */
+
+/* .price{
+  font-size: 30px;
+} */
+
+
+
+
+  /* ============================ footer ============================ */
+footer{
+  background-image: linear-gradient(rgba(50, 2, 2, 0.819),rgba(128, 128, 128, 0.534)),
+  url(../img/bk.png);
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  z-index: 300;
+  overflow: hidden;
+}
+
+/* footer img{
+  width: 4%;
+} */
+
+footer p{
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+footer h2{
+  font-size: 40px;
+}
+
+footer .khetm4{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  z-index: 200;
+}
+
+footer .cow{
+  position: absolute;
+  top: 50px;
+  left: 85%;
+  width: 300px;
+}
+
+}
+.modal-backdrop {
+  z-index: 0 !important;
+}
